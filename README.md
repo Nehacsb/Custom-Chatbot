@@ -1,7 +1,7 @@
 # Custom-Chatbot
 
 The implementation: 
-https://colab.research.google.com/drive/1g0bXVK-PMauvlBc2COqVfYTgt3G7MUDc#scrollTo=8_K8SgFlvlJO
+https://colab.research.google.com/drive/1w0bEtde8Wi2rUkCUV7hUKvzJQrmvhd0y?usp=sharing
 
 
 #### in google colab in the left sidebar  right click to create a new folder ( rename it to "Data")  and in it upload the pdf, this will be the source from which we  perform the  queries.
@@ -18,9 +18,13 @@ https://colab.research.google.com/drive/1g0bXVK-PMauvlBc2COqVfYTgt3G7MUDc#scroll
       !pip install llama-index-embeddings-huggingface
 
 pypdf: Library for working with PDF files in Python.
+<br>
 python-dotenv: For loading environment variables from a .env file.
+<br>
 transformers: HuggingFace library for natural language processing models.
+<br>
 llama-cpp-python: A package for working with Llama models using Python.
+<br>
 llama-index and its extensions (llama-index-core, llama-index-llms-openai, llama-index-llms-replicate, llama-index-embeddings-huggingface): Libraries for creating and managing indexes, querying them, and integrating different language models and embeddings.
 
 ## Logging Setup:
@@ -59,16 +63,27 @@ Sets up logging to output logs to the console with INFO level.
             verbose=True,
         )
 torch: PyTorch library for tensor computations and GPU acceleration.
+<br>
 LlamaCPP: Configures a Llama model with specified parameters:
+<br>
 model_url: URL to download the model.
+<br>
 model_path: Optional local path to a pre-downloaded model.
+<br>
 temperature: Controls the randomness of the model's output.
+<br>
 max_new_tokens: Maximum number of new tokens to generate.
+<br>
 context_window: The window size for context.
+<br>
 generate_kwargs: Additional arguments for generation.
+<br>
 model_kwargs: Additional arguments for model initialization.
+<br>
 messages_to_prompt and completion_to_prompt: Utilities to convert messages to prompts and vice versa.
+<br>
 verbose=True: Enables verbose logging.
+<br>
 
 #### Simple Query to Test the Model:
 
@@ -78,6 +93,7 @@ verbose=True: Enables verbose logging.
 
     
 prompt: Input query to test the model.
+<br>
 llm.complete(prompt): Generates a response to the prompt. 
 
 
@@ -102,6 +118,7 @@ llama_print_timings:       total time =   33975.54 ms /    78 tokens
 
     
 sentence-transformers: Library for sentence embeddings.
+<br>
 langchain and langchain_huggingface: Libraries for chaining language model operations and integrating HuggingFace embeddings.
 
 
@@ -123,8 +140,11 @@ langchain and langchain_huggingface: Libraries for chaining language model opera
 
 
 HuggingFaceEmbeddings: Utilizes HuggingFace models for generating embeddings.
+<br>
 ServiceContext: Context for the service including LLM and embedding model configurations.
+<br>
 chunk_size: Size of chunks for processing.
+<br>
 llm: Language model instance.
 embed_model: Embedding model instance using a specific HuggingFace model (BAAI/bge-small-en-v1.5).
 
@@ -136,6 +156,7 @@ embed_model: Embedding model instance using a specific HuggingFace model (BAAI/b
 
       
 VectorStoreIndex: Index for storing document vectors.
+<br>
 from_documents(documents, service_context=service_context): Creates an index from the loaded documents using the specified service context.
 
 ## Query the Index:
@@ -145,7 +166,9 @@ print(response)
 
 
 query: Takes user input as a query.
+<br>
 query_engine.query(query): Queries the index and retrieves the response.
+<br>
 
 
 
