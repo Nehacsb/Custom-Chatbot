@@ -82,7 +82,7 @@ llm.complete(prompt): Generates a response to the prompt.
 
 
 response generated: 
-  " /usr/local/lib/python3.10/dist-packages/llama_cpp/llama.py:1054: RuntimeWarning: Detected duplicate leading "<s>" in prompt, this will likely reduce response quality, consider removing it...
+   /usr/local/lib/python3.10/dist-packages/llama_cpp/llama.py:1054: RuntimeWarning: Detected duplicate leading "<s>" in prompt, this will likely reduce response quality, consider removing it...
   warnings.warn(
 
 llama_print_timings:        load time =   28893.72 ms
@@ -90,7 +90,7 @@ llama_print_timings:      sample time =       6.06 ms /     8 runs   (    0.76 m
 llama_print_timings: prompt eval time =   28892.46 ms /    71 tokens (  406.94 ms per token,     2.46 tokens per second)
 llama_print_timings:        eval time =    5066.55 ms /     7 runs   (  723.79 ms per token,     1.38 tokens per second)
 llama_print_timings:       total time =   33975.54 ms /    78 tokens
- The capital of France is Paris. "
+ The capital of France is Paris. 
 
 
 
