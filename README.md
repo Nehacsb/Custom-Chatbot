@@ -170,6 +170,19 @@ query: Takes user input as a query.
 query_engine.query(query): Queries the index and retrieves the response.
 <br>
 
+### Query Asked 
+How is the academic system designed?
+<br>
+
+response received: 
+llama_print_timings:        load time =   42007.07 ms
+llama_print_timings:      sample time =     171.27 ms /   246 runs   (    0.70 ms per token,  1436.35 tokens per second)
+llama_print_timings: prompt eval time =  322390.77 ms /   757 tokens (  425.88 ms per token,     2.35 tokens per second)
+llama_print_timings:        eval time =  215842.29 ms /   245 runs   (  880.99 ms per token,     1.14 tokens per second)
+llama_print_timings:       total time =  538747.11 ms /  1002 tokens
+ The academic system at IIT Ropar is designed to provide a science-based engineering education with the goal of producing quality engineer-scientists. The curriculum provides broad-based knowledge and simultaneously builds a temper for life-long learning and exploring. The undergraduate program begins with a set of science and general engineering courses that are reflected in the course plan for the first year. These courses provide a foundation for further discipline-specific courses. The medium of instruction at IIT Ropar is English. The current academic year began in October 2022 and is expected to end in July 2023. The detailed schedule of activities and academic deadlines is given in the semester schedule and is available on the website link: ... . Education at the Institute is organized around a semester-based credit system of study. The prominent feature of the credits system is a process of continuous evaluation of a student's performance/progress, and the flexibility to allow a student to progress at an optimal pace suited to his/her ability or convenience. This feature is subject to the fulfillment of the minimum requirement for continuation.
+
+
 
 
 
