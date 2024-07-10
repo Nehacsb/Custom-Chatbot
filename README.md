@@ -82,8 +82,7 @@ llm.complete(prompt): Generates a response to the prompt.
 
 
 response generated: 
-   /usr/local/lib/python3.10/dist-packages/llama_cpp/llama.py:1054: RuntimeWarning: Detected duplicate leading "<s>" in prompt, this will likely reduce response quality, consider removing it...
-  warnings.warn(
+   
 
 llama_print_timings:        load time =   28893.72 ms
 llama_print_timings:      sample time =       6.06 ms /     8 runs   (    0.76 ms per token,  1319.26 tokens per second)
